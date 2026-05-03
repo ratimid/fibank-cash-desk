@@ -1,7 +1,6 @@
 package com.ratimid.fibank_cash_desk.dto;
 
 import com.ratimid.fibank_cash_desk.entity.CashOperation;
-
 import java.math.BigDecimal;
 import java.util.List;
 

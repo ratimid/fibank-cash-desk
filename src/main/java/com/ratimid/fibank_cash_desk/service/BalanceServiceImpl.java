@@ -6,7 +6,6 @@ import com.ratimid.fibank_cash_desk.mapper.BalanceMapper;
 import com.ratimid.fibank_cash_desk.repository.BalanceRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
 import java.util.List;
 
 @Service

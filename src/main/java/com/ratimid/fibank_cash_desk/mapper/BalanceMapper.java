@@ -5,7 +5,6 @@ import com.ratimid.fibank_cash_desk.entity.Balance;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Named;
-
 import java.time.LocalDateTime;
 import java.util.List;
 

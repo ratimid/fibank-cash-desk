@@ -1,7 +1,6 @@
 package com.ratimid.fibank_cash_desk.dto;
 
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.List;

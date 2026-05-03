@@ -5,7 +5,6 @@ import com.ratimid.fibank_cash_desk.entity.BalanceInventory;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Named;
-
 import java.util.List;
 
 @Mapper(componentModel = "spring")
