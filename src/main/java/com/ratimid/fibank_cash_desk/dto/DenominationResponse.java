@@ -1,20 +1,23 @@
 package com.ratimid.fibank_cash_desk.dto;
 
-public class DenominationResponseDto {
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-    private Integer denominationValue;
+@JsonPropertyOrder({ "value", "quantity", "description" })
+public class DenominationResponse {
+
+    private Integer value;
     private Integer quantity;
     private String description;
 
-    public DenominationResponseDto() {
+    public DenominationResponse() {
     }
 
-    public Integer getDenominationValue() {
-        return denominationValue;
+    public Integer getValue() {
+        return value;
     }
 
-    public void setDenominationValue(Integer denominationValue) {
-        this.denominationValue = denominationValue;
+    public void setValue(Integer value) {
+        this.value = value;
     }
 
     public Integer getQuantity() {

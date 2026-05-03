@@ -1,6 +1,6 @@
 package com.ratimid.fibank_cash_desk.controller;
 
-import com.ratimid.fibank_cash_desk.dto.BalanceResponseDto;
+import com.ratimid.fibank_cash_desk.dto.BalanceResponse;
 import com.ratimid.fibank_cash_desk.service.BalanceService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -17,7 +17,7 @@ public class CashBalanceController {
     }
 
     @GetMapping("/cashiers/{id}")
-    public ResponseEntity<BalanceResponseDto> balance(@PathVariable Long id) {
+    public ResponseEntity<BalanceResponse> balance(@PathVariable Long id) {
         return new ResponseEntity(balanceService.findAllByCashierId(id), HttpStatus.OK);
     }
 }

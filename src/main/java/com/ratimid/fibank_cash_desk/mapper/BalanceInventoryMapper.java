@@ -1,6 +1,6 @@
 package com.ratimid.fibank_cash_desk.mapper;
 
-import com.ratimid.fibank_cash_desk.dto.DenominationResponseDto;
+import com.ratimid.fibank_cash_desk.dto.DenominationResponse;
 import com.ratimid.fibank_cash_desk.entity.BalanceInventory;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
@@ -11,11 +11,11 @@ import java.util.List;
 @Mapper(componentModel = "spring")
 public interface BalanceInventoryMapper {
 
-    List<DenominationResponseDto> toResponseList(List<BalanceInventory> balanceInventoryList);
+    List<DenominationResponse> toResponseList(List<BalanceInventory> balanceInventoryList);
 
-    @Mapping(source = "denomination.value", target = "denominationValue")
+    @Mapping(source = "denomination.value", target = "value")
     @Mapping(source = ".", target = "description", qualifiedByName = "formatDescription")
-    DenominationResponseDto toResponse(BalanceInventory balanceInventory);
+    DenominationResponse toResponse(BalanceInventory balanceInventory);
 
     @Named("formatDescription")
     default String formatDescription(BalanceInventory inventory) {

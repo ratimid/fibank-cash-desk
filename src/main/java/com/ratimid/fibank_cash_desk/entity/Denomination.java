@@ -1,7 +1,10 @@
 package com.ratimid.fibank_cash_desk.entity;
 
 import jakarta.persistence.*;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 
+import java.time.LocalDateTime;
 import java.util.Objects;
 import java.util.Set;
 
@@ -26,6 +29,21 @@ public class Denomination {
 
     @OneToMany(mappedBy = "denomination", cascade = CascadeType.ALL)
     private Set<BalanceInventory> balanceInventories;
+
+    @Column(
+            name = "created_date",
+            nullable = false,
+            updatable = false,
+            columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+    )
+    private LocalDateTime createdDate;
+
+    @Column(
+            name = "last_modified_date",
+            insertable = false,
+            columnDefinition = "TIMESTAMP DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP"
+    )
+    private LocalDateTime lastModifiedDate;
 
     public Denomination() {
     }
@@ -52,6 +70,30 @@ public class Denomination {
 
     public void setCurrency(Currency currency) {
         this.currency = currency;
+    }
+
+    public Set<BalanceInventory> getBalanceInventories() {
+        return balanceInventories;
+    }
+
+    public void setBalanceInventories(Set<BalanceInventory> balanceInventories) {
+        this.balanceInventories = balanceInventories;
+    }
+
+    public LocalDateTime getCreatedDate() {
+        return createdDate;
+    }
+
+    public void setCreatedDate(LocalDateTime createdDate) {
+        this.createdDate = createdDate;
+    }
+
+    public LocalDateTime getLastModifiedDate() {
+        return lastModifiedDate;
+    }
+
+    public void setLastModifiedDate(LocalDateTime lastModifiedDate) {
+        this.lastModifiedDate = lastModifiedDate;
     }
 
     @Override

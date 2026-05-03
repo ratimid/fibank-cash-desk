@@ -1,8 +1,11 @@
 package com.ratimid.fibank_cash_desk.entity;
 
 import jakarta.persistence.*;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
 import java.util.Objects;
 import java.util.Set;
 
@@ -30,6 +33,21 @@ public class Balance {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "cashier_id", referencedColumnName = "id")
     private Cashier cashier;
+
+    @Column(
+            name = "created_date",
+            nullable = false,
+            updatable = false,
+            columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+    )
+    private LocalDateTime createdDate;
+
+    @Column(
+            name = "last_modified_date",
+            insertable = false,
+            columnDefinition = "TIMESTAMP DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP"
+    )
+    private LocalDateTime lastModifiedDate;
 
     public Balance() {
     }
@@ -72,6 +90,22 @@ public class Balance {
 
     public void setCashier(Cashier cashier) {
         this.cashier = cashier;
+    }
+
+    public LocalDateTime getCreatedDate() {
+        return createdDate;
+    }
+
+    public void setCreatedDate(LocalDateTime createdDate) {
+        this.createdDate = createdDate;
+    }
+
+    public LocalDateTime getLastModifiedDate() {
+        return lastModifiedDate;
+    }
+
+    public void setLastModifiedDate(LocalDateTime lastModifiedDate) {
+        this.lastModifiedDate = lastModifiedDate;
     }
 
     @Override
