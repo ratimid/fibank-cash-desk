@@ -1,1 +1,4 @@
 04-05-2026 00:12:47.632 [http-nio-8080-exec-2] INFO  c.r.f.c.CashOperationsController - Cash operation execution for cashiers with id: 1
+04-05-2026 00:23:02.038 [http-nio-8080-exec-3] INFO  c.r.f.c.CashOperationsController - Cash operation execution for cashiers with id: 1
+04-05-2026 00:23:16.188 [http-nio-8080-exec-4] INFO  c.r.f.c.CashOperationsController - Cash operation execution for cashiers with id: 1
+04-05-2026 00:23:53.139 [http-nio-8080-exec-5] INFO  c.r.f.c.CashOperationsController - Cash operation execution for cashiers with id: 1

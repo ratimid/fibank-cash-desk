@@ -5,3 +5,6 @@
 04-05-2026 00:08:36.009 [http-nio-8080-exec-1] INFO  c.r.f.c.CashBalanceController - Get balance for cashier with id: 1
 04-05-2026 00:13:00.926 [http-nio-8080-exec-3] INFO  c.r.f.c.CashBalanceController - Get balance for cashier with id: 1
 04-05-2026 00:20:16.258 [http-nio-8080-exec-7] INFO  c.r.f.c.CashBalanceController - Get balance for cashier with id: 1
+04-05-2026 00:40:51.356 [http-nio-8080-exec-1] INFO  c.r.f.c.CashBalanceController - Get balance for cashier with id: 1
+04-05-2026 00:40:55.668 [http-nio-8080-exec-3] INFO  c.r.f.c.CashBalanceController - Get balance for cashier with id: 4
+04-05-2026 00:40:59.414 [http-nio-8080-exec-2] INFO  c.r.f.c.CashBalanceController - Get balance for cashier with id: 5
