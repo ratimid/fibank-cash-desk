@@ -1,0 +1,46 @@
+{"@timestamp":"2026-05-03T20:03:31.5152532+03:00","@version":"1","message":"Get balance for cashier with id: 1","logger_name":"com.ratimid.fibank_cash_desk.controller.CashBalanceController","thread_name":"http-nio-8080-exec-2","level":"INFO","level_value":20000}
+{"@timestamp":"2026-05-03T20:03:49.359534+03:00","@version":"1","message":"Get balance for cashier with id: 1","logger_name":"com.ratimid.fibank_cash_desk.controller.CashBalanceController","thread_name":"http-nio-8080-exec-3","level":"INFO","level_value":20000}
+{"@timestamp":"2026-05-03T20:03:50.6460838+03:00","@version":"1","message":"Get balance for cashier with id: 1","logger_name":"com.ratimid.fibank_cash_desk.controller.CashBalanceController","thread_name":"http-nio-8080-exec-4","level":"INFO","level_value":20000}
+{"@timestamp":"2026-05-03T20:03:51.6269588+03:00","@version":"1","message":"Get balance for cashier with id: 1","logger_name":"com.ratimid.fibank_cash_desk.controller.CashBalanceController","thread_name":"http-nio-8080-exec-5","level":"INFO","level_value":20000}
+{"@timestamp":"2026-05-03T20:03:52.6664086+03:00","@version":"1","message":"Get balance for cashier with id: 1","logger_name":"com.ratimid.fibank_cash_desk.controller.CashBalanceController","thread_name":"http-nio-8080-exec-6","level":"INFO","level_value":20000}
+{"@timestamp":"2026-05-03T20:03:53.6638305+03:00","@version":"1","message":"Get balance for cashier with id: 1","logger_name":"com.ratimid.fibank_cash_desk.controller.CashBalanceController","thread_name":"http-nio-8080-exec-7","level":"INFO","level_value":20000}
+{"@timestamp":"2026-05-03T20:07:15.018506+03:00","@version":"1","message":"Get balance for cashier with id: 1","logger_name":"com.ratimid.fibank_cash_desk.controller.CashBalanceController","thread_name":"http-nio-8080-exec-2","level":"INFO","level_value":20000}
+{
+  "@timestamp" : "2026-05-03T20:07:55.5177471+03:00",
+  "@version" : "1",
+  "message" : "Get balance for cashier with id: 1",
+  "logger_name" : "com.ratimid.fibank_cash_desk.controller.CashBalanceController",
+  "thread_name" : "http-nio-8080-exec-2",
+  "level" : "INFO",
+  "level_value" : 20000
+}
+{
+  "@timestamp" : "2026-05-03T20:08:00.6708267+03:00",
+  "@version" : "1",
+  "message" : "Get balance for cashier with id: 1",
+  "logger_name" : "com.ratimid.fibank_cash_desk.controller.CashBalanceController",
+  "thread_name" : "http-nio-8080-exec-3",
+  "level" : "INFO",
+  "level_value" : 20000
+}
+{
+  "@timestamp" : "2026-05-03T20:08:35.4360801+03:00",
+  "@version" : "1",
+  "message" : "Get balance for cashier with id: 1",
+  "logger_name" : "com.ratimid.fibank_cash_desk.controller.CashBalanceController",
+  "thread_name" : "http-nio-8080-exec-4",
+  "level" : "INFO",
+  "level_value" : 20000
+}
+{"@timestamp":"2026-05-03T20:08:43.2160416+03:00","@version":"1","message":"Get balance for cashier with id: 1","logger_name":"com.ratimid.fibank_cash_desk.controller.CashBalanceController","thread_name":"http-nio-8080-exec-2","level":"INFO","level_value":20000}
+{"@timestamp":"2026-05-03T20:08:45.0565943+03:00","@version":"1","message":"Get balance for cashier with id: 1","logger_name":"com.ratimid.fibank_cash_desk.controller.CashBalanceController","thread_name":"http-nio-8080-exec-3","level":"INFO","level_value":20000}
+{"@timestamp":"2026-05-03T20:09:03.0475187+03:00","@version":"1","message":"Get balance for cashier with id: 1","logger_name":"com.ratimid.fibank_cash_desk.controller.CashBalanceController","thread_name":"http-nio-8080-exec-2","level":"INFO","level_value":20000}
+{"@timestamp":"2026-05-03T20:09:05.0287226+03:00","@version":"1","message":"Get balance for cashier with id: 1","logger_name":"com.ratimid.fibank_cash_desk.controller.CashBalanceController","thread_name":"http-nio-8080-exec-4","level":"INFO","level_value":20000}
+{"@timestamp":"2026-05-03T20:19:26.4100776+03:00","@version":"1","message":"Get balance for cashier with id: 1","logger_name":"com.ratimid.fibank_cash_desk.controller.CashBalanceController","thread_name":"http-nio-8080-exec-2","level":"INFO","level_value":20000}
+{"@timestamp":"2026-05-03T20:19:35.0510266+03:00","@version":"1","message":"Get balance for cashier with id: 1","logger_name":"com.ratimid.fibank_cash_desk.controller.CashBalanceController","thread_name":"http-nio-8080-exec-4","level":"INFO","level_value":20000}
+{"@timestamp":"2026-05-03T20:19:36.1263775+03:00","@version":"1","message":"Get balance for cashier with id: 1","logger_name":"com.ratimid.fibank_cash_desk.controller.CashBalanceController","thread_name":"http-nio-8080-exec-3","level":"INFO","level_value":20000}
+{"@timestamp":"2026-05-03T20:19:43.2867704+03:00","@version":"1","message":"Get balance for cashier with id: 1","logger_name":"com.ratimid.fibank_cash_desk.controller.CashBalanceController","thread_name":"http-nio-8080-exec-6","level":"INFO","level_value":20000}
+{"@timestamp":"2026-05-03T20:19:44.3335089+03:00","@version":"1","message":"Get balance for cashier with id: 1","logger_name":"com.ratimid.fibank_cash_desk.controller.CashBalanceController","thread_name":"http-nio-8080-exec-5","level":"INFO","level_value":20000}
+{"@timestamp":"2026-05-03T20:19:45.3618356+03:00","@version":"1","message":"Get balance for cashier with id: 1","logger_name":"com.ratimid.fibank_cash_desk.controller.CashBalanceController","thread_name":"http-nio-8080-exec-7","level":"INFO","level_value":20000}
+{"@timestamp":"2026-05-03T20:19:46.5808243+03:00","@version":"1","message":"Get balance for cashier with id: 1","logger_name":"com.ratimid.fibank_cash_desk.controller.CashBalanceController","thread_name":"http-nio-8080-exec-8","level":"INFO","level_value":20000}
+{"@timestamp":"2026-05-03T22:52:00.2083025+03:00","@version":"1","message":"Get balance for cashier with id: 1","logger_name":"com.ratimid.fibank_cash_desk.controller.CashBalanceController","thread_name":"http-nio-8080-exec-4","level":"INFO","level_value":20000}

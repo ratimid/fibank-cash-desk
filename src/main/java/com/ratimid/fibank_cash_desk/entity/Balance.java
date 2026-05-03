@@ -6,6 +6,7 @@ import org.hibernate.annotations.UpdateTimestamp;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.Collection;
 import java.util.Objects;
 import java.util.Set;
 
@@ -45,6 +46,7 @@ public class Balance {
     @Column(
             name = "last_modified_date",
             insertable = false,
+            updatable = false,
             columnDefinition = "TIMESTAMP DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP"
     )
     private LocalDateTime lastModifiedDate;

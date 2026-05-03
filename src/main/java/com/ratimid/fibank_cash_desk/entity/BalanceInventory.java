@@ -1,8 +1,13 @@
 package com.ratimid.fibank_cash_desk.entity;
 
-import jakarta.persistence.*;
-import org.hibernate.annotations.CreationTimestamp;
-import org.hibernate.annotations.UpdateTimestamp;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.SequenceGenerator;
 
 import java.time.LocalDateTime;
 import java.util.Objects;
@@ -40,6 +45,7 @@ public class BalanceInventory {
     @Column(
             name = "last_modified_date",
             insertable = false,
+            updatable = false,
             columnDefinition = "TIMESTAMP DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP"
     )
     private LocalDateTime lastModifiedDate;

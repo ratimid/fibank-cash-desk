@@ -1,29 +1,30 @@
-package com.ratimid.fibank_cash_desk.entity;
+package com.ratimid.fibank_cash_desk.config.security;
 
 import jakarta.persistence.*;
-import org.hibernate.annotations.CreationTimestamp;
-import org.hibernate.annotations.UpdateTimestamp;
 
 import java.time.LocalDateTime;
-import java.util.Objects;
 
 @Entity
-public class Cashier {
+@Table(name = "api_key", indexes = {
+        @Index(name = "idx_client", columnList = "client")
+})
+public class ApiKey {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "sequence_generator")
     @SequenceGenerator(
             name = "sequence_generator",
-            sequenceName = "cashier_seq",
+            sequenceName = "api_key_seq",
             allocationSize = 1
     )
     private Long id;
 
-    @Column(nullable = false)
-    private String firstName;
+    @Column(unique = true, nullable = false)
+    private String hashedKey;
 
-    @Column(nullable = false)
-    private String lastName;
+    private String client;
+
+    private boolean active;
 
     @Column(
             name = "created_date",
@@ -41,7 +42,8 @@ public class Cashier {
     )
     private LocalDateTime lastModifiedDate;
 
-    public Cashier() {
+
+    public ApiKey() {
     }
 
     public Long getId() {
@@ -52,20 +54,28 @@ public class Cashier {
         this.id = id;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getHashedKey() {
+        return hashedKey;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setHashedKey(String hashedKey) {
+        this.hashedKey = hashedKey;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getClient() {
+        return client;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setClient(String client) {
+        this.client = client;
+    }
+
+    public boolean isActive() {
+        return active;
+    }
+
+    public void setActive(boolean active) {
+        this.active = active;
     }
 
     public LocalDateTime getCreatedDate() {
@@ -82,18 +92,5 @@ public class Cashier {
 
     public void setLastModifiedDate(LocalDateTime lastModifiedDate) {
         this.lastModifiedDate = lastModifiedDate;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (o == null || getClass() != o.getClass()) return false;
-
-        Cashier cashier = (Cashier) o;
-        return Objects.equals(id, cashier.id);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hashCode(id);
     }
 }

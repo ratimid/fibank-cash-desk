@@ -1,6 +1,6 @@
 <configuration scan="true" scanPeriod="15 seconds">
     <property resource="application.properties" />
-    <property name="LOG_DIR" value="/logs" />
+    <property name="LOG_DIR" value="logs" />
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
             <pattern>%d{dd-MM-yyyy HH:mm:ss.SSS} [%thread] %highlight(%-5level) %cyan(%logger{36}) - %msg%n</pattern>
@@ -60,11 +60,13 @@
     <logger name="com.ratimid.fibank_cash_desk.controller.CashOperationsController" level="info" additivity="false">
         <appender-ref ref="CASH_OPERATIONS_TXT" />
         <appender-ref ref="CASH_OPERATIONS_JSON" />
+        <appender-ref ref="STDOUT" />
     </logger>
 
     <logger name="com.ratimid.fibank_cash_desk.controller.CashBalanceController" level="info" additivity="false">
-        <appender-ref ref="BALANCE_TXT" />
-        <appender-ref ref="BALANCE_JSON" />
+        <appender-ref ref="CASH_BALANCE_TXT" />
+        <appender-ref ref="CASH_BALANCE_JSON" />
+        <appender-ref ref="STDOUT" />
     </logger>
 
     <root level="${root.level}">
@@ -73,4 +75,5 @@
 
     <logger name="com.ratimid.fibank_cash_desk" level="${logger.com.ratimid.fibank_cash_desk}" />
     <logger name="com.raimitd.fibank_cash_desk.services" level="${logger.raimitd.fibank_cash_desk.services}" />
+    <logger name="com.raimitd.fibank_cash_desk.controllers" level="${logger.raimitd.fibank_cash_desk.controllers}" />
 </configuration>

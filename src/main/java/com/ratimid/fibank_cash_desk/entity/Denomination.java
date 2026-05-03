@@ -41,6 +41,7 @@ public class Denomination {
     @Column(
             name = "last_modified_date",
             insertable = false,
+            updatable = false,
             columnDefinition = "TIMESTAMP DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP"
     )
     private LocalDateTime lastModifiedDate;
