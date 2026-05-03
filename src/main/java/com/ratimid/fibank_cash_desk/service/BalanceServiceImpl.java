@@ -5,6 +5,7 @@ import com.ratimid.fibank_cash_desk.entity.Balance;
 import com.ratimid.fibank_cash_desk.mapper.BalanceMapper;
 import com.ratimid.fibank_cash_desk.repository.BalanceRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -21,6 +22,7 @@ public class BalanceServiceImpl implements BalanceService {
     }
 
     @Override
+    @Transactional(readOnly = true)
     public List<BalanceResponse> findAllByCashierId(Long cashierId) {
         List<Balance> balanceList = balanceRepository.findByCashierId(cashierId);
 

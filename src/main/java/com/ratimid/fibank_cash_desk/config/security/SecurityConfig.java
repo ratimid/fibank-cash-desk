@@ -29,7 +29,7 @@ public class SecurityConfig {
                 .exceptionHandling(ex -> ex
                         .authenticationEntryPoint((request, response, authException) -> {
                             response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
-                            response.getWriter().write("Invalid API Key");
+                            response.getWriter().write("Auth Error: " + authException.getMessage());
                         })
                 );
 

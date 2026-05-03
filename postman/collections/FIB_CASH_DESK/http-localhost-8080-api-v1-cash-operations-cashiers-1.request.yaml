@@ -1,0 +1,39 @@
+$kind: http-request
+name: http://localhost:8080/api/v1/cash-operations/cashiers/1
+url: http://localhost:8080/api/v1/cash-operations/cashiers/1
+method: POST
+headers:
+  FIB-X-CLIENT: FIB_CLIENT
+  FIB-X-AUTH: f9Uie8nNf112hx8s
+body:
+  type: json
+  content: "\r
+
+    \    {\r
+
+    \        \"amount\": 100.00,\r
+
+    \        \"currency\": \"BGN\",\r
+
+    \        \"denominationRequests\": [\r
+
+    \            {\r
+
+    \                \"value\": 10,\r
+
+    \                \"quantity\": 5\r
+
+    \            },\r
+
+    \            {\r
+
+    \                \"value\": 50,\r
+
+    \                \"quantity\": 1\r
+
+    \            }\r
+
+    \        ]\r
+
+    \    }"
+order: 1777843447052
